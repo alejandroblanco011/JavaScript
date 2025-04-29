@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient(135deg, #2f3640, #a3b8d3); /* Fondo en gradiente gris oscuro a azul claro */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.note {
+    background-color: #fff; /* Fondo blanco para la nota */
+    color: #111; /* Texto oscuro para la nota */
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 3px solid #111; /* Línea divisoria debajo de la nota */
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    background: transparent; /* Fondo transparente, para que se vea el fondo de la página */
+    text-align: center;
+}
+
+h1 {
+    color: #fff; /* Color blanco para el título */
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuadrícula 4x4 */
+    gap: 20px; /* Espaciado entre los elementos */
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    background: #2f3640; /* Fondo gris oscuro para los botones */
+    padding: 20px;
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff; /* Color blanco para el texto */
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Transición suave para el hover */
+    padding: 12px 24px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.menu li:hover {
+    transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4); /* Sombra más intensa al hacer hover */
+}
+
+.menu a:hover {
+    color: #2f3640; /* Texto en gris oscuro al hacer hover */
+    background-color: #a3b8d3; /* Fondo azul claro al hacer hover */
+    transform: scale(1.05); /* Efecto de escalado al hacer hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.menu a:focus {
+    outline: none;
+    border: 2px solid #a3b8d3; /* Borde azul claro al enfocar el enlace */
+}
+
+.note p {
+    margin: 8px 0;
+    font-size: 20px;
+    color: #2f3640; /* Un tono oscuro elegante */
+    background: #dcdde1; /* Fondo gris muy claro */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.note p:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background: #a3b8d3; /* Mismo azul claro que ya usas */
+    color: #fff;
+}
+
+.note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Separación entre imagen y texto */
+}
+
+.note-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Imagen redonda */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.note-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
